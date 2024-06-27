@@ -4,9 +4,7 @@ import streamlit as st
 st.markdown(
     """
     <style>
-    #GithubIcon {
-        visibility: hidden;
-    }
+    footer {visibility: hidden;}
     </style>
     """,
     unsafe_allow_html=True,
@@ -17,5 +15,6 @@ st.title("My Streamlit App")
 st.write("Welcome to my app!")
 
 # Rest of your app logic...
+
 
 
