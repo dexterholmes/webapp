@@ -9,8 +9,8 @@ st.markdown(
         display: none;
     }
 
-    /* Disable clicks on the parent container of the GitHub icon */
-    div[data-testid="stDecoration"] {
+    /* Disable pointer events on the entire footer */
+    footer {
         pointer-events: none;
     }
     </style>
