@@ -1,14 +1,21 @@
 import streamlit as st
 
 # Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-<style>
-#GithubIcon {
-    visibility: hidden;
-}
-</style>
-"""
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    #GithubIcon {
+        visibility: hidden;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
-# Your app code goes here
+# Your Streamlit app code goes here
+st.title("My Streamlit App")
+st.write("Welcome to my app!")
+
+# Rest of your app logic...
+
 
