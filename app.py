@@ -1,21 +1,19 @@
 import streamlit as st
 
-# Add custom CSS and JavaScript to hide and disable the GitHub icon
+# Add custom CSS to hide and disable the GitHub icon
 st.markdown(
     """
     <style>
+    /* Hide the GitHub icon */
     div[data-testid="stActionButtonIcon"] {
         display: none;
     }
+
+    /* Disable clicks on the parent container of the GitHub icon */
+    div[data-testid="stDecoration"] {
+        pointer-events: none;
+    }
     </style>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var githubIcon = document.querySelector('div[data-testid="stActionButtonIcon"]');
-        if (githubIcon) {
-            githubIcon.remove();
-        }
-    });
-    </script>
     """,
     unsafe_allow_html=True,
 )
@@ -25,4 +23,5 @@ st.title("My Streamlit App")
 st.write("Welcome to my app!")
 
 # Rest of your app logic...
+
 
