@@ -4,8 +4,8 @@ import streamlit as st
 st.markdown(
     """
     <style>
-    .css-1lsmgbg.e1fqkh3o3 {
-        display: none;
+    .viewerBadge_container__1QSob { 
+        display: none; 
     }
     </style>
     """,
@@ -13,8 +13,7 @@ st.markdown(
 )
 
 # Your Streamlit app code goes here
-st.title("aMy Streamlit App")
+st.title("My Streamlit App")
 st.write("Welcome to my app!")
 
 # Rest of your app logic...
-
