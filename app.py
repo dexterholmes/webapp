@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Add custom CSS to hide and disable the GitHub icon
+# Add custom CSS to hide and disable the GitHub icon and its container
 st.markdown(
     """
     <style>
@@ -9,8 +9,8 @@ st.markdown(
         display: none;
     }
 
-    /* Disable pointer events on the entire footer */
-    footer {
+    /* Disable pointer events on the parent container of the GitHub icon */
+    div[data-testid="stActionButton"] {
         pointer-events: none;
     }
     </style>
@@ -23,5 +23,6 @@ st.title("My Streamlit App")
 st.write("Welcome to my app!")
 
 # Rest of your app logic...
+
 
 
