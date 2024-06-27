@@ -1,6 +1,16 @@
 import streamlit as st
 from sqlalchemy import text
 
+# Hide the GitHub button
+hide_github_button_style = """
+    <style>
+    .stApp div[data-testid="stDecoration"] { 
+        display: none; 
+    }
+    </style>
+    """
+st.markdown(hide_github_button_style, unsafe_allow_html=True)
+
 list_doctor = ['', 'dr. Nurita', 'dr. Yogi', 'dr. Wibowo', 'dr. Ulama', 'dr. Ping']
 list_symptom = ['', 'male', 'female']
 
