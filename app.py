@@ -4,8 +4,8 @@ import streamlit as st
 st.markdown(
     """
     <style>
-    .st-emotion-cache-30do4w e3g6aar1 { 
-        display: none; 
+    div[data-testid="stActionButtonIcon"] {
+        display: none;
     }
     </style>
     """,
@@ -17,3 +17,4 @@ st.title("My Streamlit App")
 st.write("Welcome to my app!")
 
 # Rest of your app logic...
+
