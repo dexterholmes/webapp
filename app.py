@@ -4,7 +4,7 @@ import streamlit as st
 st.markdown(
     """
     <style>
-    .viewerBadge_container__1QSob { 
+    .st-emotion-cache-30do4w e3g6aar1 { 
         display: none; 
     }
     </style>
